@@ -1,0 +1,14 @@
+import random
+
+def lanzar_moneda():
+    return "Cara" if random.choice([True, False]) else "Cruz"
+
+def emoji_aleatorio():
+    emojis = ["😊", "😂", "🤔", "🥳", "🙃", "😎"]
+    return random.choice(emojis)
+
+def main():
+    print("Lanzamiento de moneda:", lanzar_moneda())
+    print("Emoji aleatorio:", emoji_aleatorio())
+
+main()
